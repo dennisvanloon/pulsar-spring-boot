@@ -1,0 +1,32 @@
+### Get a list of clusters
+GET {{host}}/admin/v2/clusters
+
+###  Get a list of tenants
+GET {{host}}/admin/v2/tenants
+
+### Get the namespaces for a tenant
+GET {{host}}/admin/v2/namespaces/public
+
+### Get a list of persistent topics for a names of tenant
+GET {{host}}/admin/v2/persistent/public/default
+
+### Create a persistent topic within the the namespace of a tenant
+PUT {{host}}/admin/v2/persistent/public/default/test
+
+### Get the stats of a topic
+GET {{host}}/admin/v2/persistent/public/default/test/internalStats
+
+### Delete a topic
+DELETE {{host}}/admin/v2/persistent/public/default/test
+
+### Reset a specific listener on a topic
+POST {{host}}/admin/v2/persistent/public/default/times/subscription/time-subscription/resetcursor/1713191400000
+
+### Get the message first after the given timestamp
+GET {{host}}/admin/v2/persistent/public/default/times/messageid/1713191400000
+
+### Get the message from a topic legder and entry id
+GET {{host}}/admin/v2/persistent/public/default/times/ledger/17/entry/33
+
+### Get the schema of a topic
+GET {{host}}/admin/v2/schemas/public/default/users/schema

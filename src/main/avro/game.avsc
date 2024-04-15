@@ -1,0 +1,8 @@
+{"namespace": "com.example.pulsar.model",
+  "type": "record",
+  "name": "Game",
+  "fields": [
+    {"name": "name", "type": ["string", "null"]},
+    {"name": "publisher", "type": ["string", "null"]}
+  ]
+}
